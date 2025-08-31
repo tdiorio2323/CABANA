@@ -1,37 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CABANA VIP Access</title>
+  <title>FansWorld - Premium Creator Platform</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --background-dark: #0a0a0b;
+      --glass: rgba(20, 20, 30, 0.35);
+      --glass-sm: rgba(20, 20, 30, 0.2);
+      --chrome: rgba(123, 123, 131, 0.4);
+      --iridescent-aqua: #72ECFF;
+      --luxury-violet: #a855f7;
+      --gold-accent: #eab308;
+      --chrome-gray: #7b7b83;
+      --text-light: #FFFFFF;
+      --text-muted: #9BA0A6;
+    }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-dark);
+      color: var(--text-light);
     }
-    .holographic-shine::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        110deg,
-        transparent 30%,
-        rgba(255, 255, 255, 0.4) 50%,
-        transparent 70%
-      );
-      transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-      transform: translateX(-100%) skewX(-20deg);
+    .font-heading {
+      font-family: 'Bebas Neue', sans-serif;
     }
-    .holographic-shine:hover::after,
-    .holographic-shine:focus::after {
-      transform: translateX(100%) skewX(-20deg);
+    .shadow-neon {
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.45);
     }
   </style>
 <script type="importmap">
@@ -44,7 +43,7 @@
 }
 </script>
 </head>
-<body class="bg-[#121316]">
+<body class="bg-[--background-dark]">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
